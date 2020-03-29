@@ -172,6 +172,9 @@
           <!-- Sidebar user (optional) -->
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
+              @php
+                  $userIMG =session('userIMG');
+              @endphp
               @if (!empty(session('userIMG')))
                 <img src="{{asset('/fotoPP/'.$userIMG)}}" class="img-circle elevation-2" alt="User Image">
               @else
